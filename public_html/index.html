@@ -4,6 +4,8 @@
 	<title></title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<script async type="text/javascript" src="assets/js/script.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -18,7 +20,7 @@
 				</div>
 			</div>
 			<div class="container">
-				<ul>
+				<ul class="header__nav">
 					<li><a>Главная</a></li>
 					<li><a>Меню</a></li>
 					<li><a>О нас</a></li>
@@ -28,29 +30,33 @@
 					<li><a>Галерея</a></li>
 					<li><a>Контакты</a></li>
 				</ul>
-				<div class="logo"></div>
+				<a class="header__logo">
+					<img src="assets/img/logo-main.svg">
+				</a>
 				<p>Cовременный лаунж-бар с фьюжн кухней, авторским баром<br>и паровыми коктейлями. Место, в котором каждая деталь<br>ориентирована на гостей, где комфорт и сервис превыше всего.</p>
 				<span>+7(812)920-14-04</span>
-				<a>ЗАБРОНИРОВАТЬ СТОЛ</a>
-				<a>V</a>
+				<a class="button">ЗАБРОНИРОВАТЬ СТОЛ</a>
+				<a class="arrow">
+					<img src="assets/img/arrow.png">
+				</a>
 			</div>
 		</section>
 
-		<section class="menu">
+		<section class="menu has-pattern">
+			<h1>Меню</h1>
 			<div class="container">
-				<h1>Меню</h1>
-				<div class="menu-slider">
+				<div class="menu__slider">
 					<div class="slider-container">
 						
 					</div>
-					<a>Скачать меню</a>
+					<a class="button">Скачать меню</a>
 					<span>2.2мб</span> <!-- уточнить -->
 				</div>
-				<div class="menu-slider">
+				<div class="menu__slider">
 					<div class="slider-container">
 						
 					</div>
-					<a>Скачать меню</a>
+					<a class="button">Скачать меню</a>
 					<span>2.2мб</span> <!-- уточнить -->
 				</div>
 			</div>
@@ -82,7 +88,7 @@
 			</div>
 		</section>
 
-		<section class="booking">
+		<section class="booking has-pattern">
 			<div class="container">
 				<h1>Бронирование</h1>
 				//FORM HERE
@@ -102,7 +108,7 @@
 			</div>
 		</section>
 
-		<section class="contacts">
+		<section class="contacts has-pattern">
 			<div class="container">
 				<h1>Контакты</h1>
 				<p>Большой проспект ПС, д. 84, 5 этаж.<br>5 минут от Ст.Метро «Петроградская»,<br>Вход через БЦ</p>
