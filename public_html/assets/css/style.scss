@@ -107,7 +107,7 @@ section {
 		flex-direction: column;
 		align-items: center;
 		height: 100%;
-    	justify-content: space-between;
+		justify-content: space-between;
 	}
 }
 
@@ -172,6 +172,7 @@ a {
 	font-weight: 700;
 	font-size: 30px;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .header {
@@ -246,12 +247,12 @@ a {
 .about {
 	& .container {
 		display: flex;
-	    flex-direction: row;
-	    justify-content: space-between;
-	    align-items: stretch;
-	    & > div {
-	    	width: 50%;
-	    }
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: stretch;
+		& > div {
+			width: 50%;
+		}
 	}
 	&-gallery {
 		display: grid;
@@ -267,8 +268,8 @@ a {
 		padding: 60px 85px;
 		& p {
 			font-size: 18px;
-    		line-height: 1.45em;
-    		margin-bottom: 1.45em;
+			line-height: 1.45em;
+			margin-bottom: 1.45em;
 		}
 	}
 }
@@ -281,23 +282,68 @@ a {
 .dessert {
 	background-image: url(../img/bg-dessert.jpg);
 	& h1 {
-		    background-color: $brand-orange;
-		    left: 0;
-		    position: absolute;
-		    margin-top: 45px;
-		    padding: 10px 0;
-		    padding-left: calc(((100% - 1170px) / 2) + 15px);
-		    padding-right: 80px;
-		    margin-right: calc((100% - 1170px) / 2);
-		    text-align: right;
-		    text-transform: none;
-		    font-style: italic;
-		    font-weight: 800;
+			background-color: $brand-orange;
+			left: 0;
+			position: absolute;
+			margin-top: 45px;
+			padding: 10px 0;
+			padding-left: calc(((100% - 1170px) / 2) + 15px);
+			padding-right: 80px;
+			margin-right: calc((100% - 1170px) / 2);
+			text-align: right;
+			text-transform: none;
+			font-style: italic;
+			font-weight: 800;
+	}
+	& p {
+		max-width: 680px;
 	}
 	& .container {
 		margin-top: 120px;
+		align-items: unset;
 		& p {
 			font-size: 24px;
+		}
+	}
+	& form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 15px auto;
+		& .fields {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			& > * {
+				width: calc(25% - 10px);
+				border: none;
+				height: 52px;
+			}
+			& input {
+				background-color: rgba(255, 255, 255, .4);
+				padding: 0 15px;
+				font-size: 18px;
+				color: $brand-white;
+				&::placeholder {
+					font-size: 18px;
+					color: $brand-white;
+				}
+			}
+		}
+		& .checkbox {
+			align-items: stretch;
+    		margin-top: 10px;
+			display: flex;
+			align-items: stretch;
+			font-size: 12px;
+			& input[type="checkbox"] {
+				margin-right: 5px;
+			}
+		}
+		& .button {
+			background-color: $brand-orange;
+			color: $brand-white;
 		}
 	}
 }

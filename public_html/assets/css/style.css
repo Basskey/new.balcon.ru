@@ -141,7 +141,8 @@ a {
   font-family: 'BanderaPro', sans-serif;
   font-weight: 700;
   font-size: 30px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
 
 .header {
   background-image: url(../img/bg-head.jpg);
@@ -238,9 +239,45 @@ a {
     text-transform: none;
     font-style: italic;
     font-weight: 800; }
+  .dessert p {
+    max-width: 680px; }
   .dessert .container {
-    margin-top: 120px; }
+    margin-top: 120px;
+    align-items: unset; }
     .dessert .container p {
       font-size: 24px; }
+  .dessert form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px auto; }
+    .dessert form .fields {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%; }
+      .dessert form .fields > * {
+        width: calc(25% - 10px);
+        border: none;
+        height: 52px; }
+      .dessert form .fields input {
+        background-color: rgba(255, 255, 255, 0.4);
+        padding: 0 15px;
+        font-size: 18px;
+        color: #ffffff; }
+        .dessert form .fields input::placeholder {
+          font-size: 18px;
+          color: #ffffff; }
+    .dessert form .checkbox {
+      align-items: stretch;
+      margin-top: 10px;
+      display: flex;
+      align-items: stretch;
+      font-size: 12px; }
+      .dessert form .checkbox input[type="checkbox"] {
+        margin-right: 5px; }
+    .dessert form .button {
+      background-color: #e35824;
+      color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
