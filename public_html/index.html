@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-	<script async type="text/javascript" src="assets/js/script.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -104,9 +103,29 @@
 		</section>
 
 		<section class="booking has-pattern">
+			<h1>Бронирование</h1>
 			<div class="container">
-				<h1>Бронирование</h1>
-				//FORM HERE
+				
+				<div class="booking-ui">
+					<div class="month-container">
+						<div onclick="go(-1)" class="arrow"><</div>
+						<div id="js-trigger"></div>
+						<div onclick="go(1)" class="arrow">></div>
+					</div>
+						<div class="week-days">
+							<div>Понедельник</div>
+							<div>Вторник</div>
+							<div>Среда</div>
+							<div>Четверг</div>
+							<div>Пятница</div>
+							<div>Суббота</div>
+							<div>Воскресенье</div>
+						</div>
+						<div id="calendar-frame" class="js-calendar">
+
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		
@@ -163,5 +182,6 @@
 			</div>
 		</section>
 	</div>
+	<script async type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
