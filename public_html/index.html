@@ -104,29 +104,54 @@
 
 		<section class="booking has-pattern">
 			<h1>Бронирование</h1>
-			<div class="container">
+			<form class="container">
 				
 				<div class="booking-ui">
 					<div class="month-container">
 						<div onclick="go(-1)" class="arrow"><</div>
-						<div id="js-trigger"></div>
+						<div id="js-trigger-month"></div>
 						<div onclick="go(1)" class="arrow">></div>
 					</div>
-						<div class="week-days">
-							<div>Понедельник</div>
-							<div>Вторник</div>
-							<div>Среда</div>
-							<div>Четверг</div>
-							<div>Пятница</div>
-							<div>Суббота</div>
-							<div>Воскресенье</div>
-						</div>
-						<div id="calendar-frame" class="js-calendar">
+					<div class="week-days">
+						<div>Понедельник</div>
+						<div>Вторник</div>
+						<div>Среда</div>
+						<div>Четверг</div>
+						<div>Пятница</div>
+						<div>Суббота</div>
+						<div>Воскресенье</div>
+					</div>
+					<div id="calendar-frame" class="js-calendar"></div>
+				</div>
 
+				<div class="booking-ui-form-container">
+					<div class="time-container">
+						<span>Время</span>
+						<input type="range" min="0" max="100" id="size" oninput="showValue(value);" value="0">
+					</div>
+					<div class="text-container">
+						<span>Имя</span>
+						<input type="text" name="name">
+					</div>
+					<div class="text-container">
+						<span>Количество гостей</span>
+						<div class="guests-container">
+							<span class="more">+</span>
+							<span id="guests">2</span>
+							<span class="less">-</span>
 						</div>
 					</div>
+					<div class="text-container">
+						<span>E-mail</span>
+						<input type="text" name="name">
+					</div>
+					<div class="text-container">
+						<span>Телефон</span>
+						<input type="text" name="name">
+					</div>
+					<button type="submit" class="button">Забронировать</button>
 				</div>
-			</div>
+			</form>
 		</section>
 		
 		<section class="actions">

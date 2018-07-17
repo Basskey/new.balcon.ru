@@ -31,8 +31,9 @@ function createCalendar(n) {
 		calCell.setDate(1);
 
 	var cell = document.createElement('div');
-	elem = document.getElementById('js-trigger');
-	elem.innerHTML = month[calMonth.getMonth()] + ' ' + calCell.getFullYear();
+
+	monthTrigger = document.getElementById('js-trigger-month');
+	monthTrigger.innerHTML = month[calMonth.getMonth()] + ' ' + calCell.getFullYear();
 
 	while (weekTail != 0) {
 		cell.className = "cell__empty";

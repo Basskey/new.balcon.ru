@@ -283,10 +283,16 @@ p, span {
       background-color: #e35824;
       color: #ffffff; }
 
-#js-trigger {
+.booking .container {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch; }
+
+#js-trigger-month {
   width: 140px;
   text-align: center;
-  font-size: 19px; }
+  font-size: 19px;
+  font-weight: 600; }
 
 .booking-ui {
   display: flex;
@@ -298,10 +304,28 @@ p, span {
     font-size: 30px;
     font-weight: 900;
     cursor: pointer; }
+  .booking-ui-form-container {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px; }
+    .booking-ui-form-container span {
+      font-family: 'BanderaPro', sans-serif;
+      font-weight: 700;
+      font-size: 19px; }
+    .booking-ui-form-container > div {
+      margin-bottom: 30px; }
+    .booking-ui-form-container .button {
+      background-color: #e35824;
+      border: none;
+      color: #ffffff;
+      margin-top: 30px; }
 
 .week-days {
   display: grid;
-  grid-template-columns: repeat(7, 80px);
+  grid-template-columns: repeat(7, 70px);
   grid-template-rows: 40px;
   grid-gap: 10px; }
 
@@ -315,13 +339,14 @@ p, span {
 
 .js-calendar {
   display: grid;
-  grid-template-columns: repeat(7, 80px);
+  grid-template-columns: repeat(7, 70px);
   grid-template-rows: auto;
   grid-gap: 10px; }
 
 .js-calendar > div {
-  height: 80px;
-  cursor: default; }
+  height: 70px;
+  cursor: default;
+  font-weight: 600; }
 
 .cell {
   background-color: #e8e8e8;
@@ -361,5 +386,31 @@ p, span {
 
 .week-days {
   font-family: 'Arimo', sans-serif; }
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .time-container span {
+    margin-bottom: 20px; }
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center; }
+  .text-container input {
+    height: 33px;
+    border: none;
+    max-width: 214px; }
+
+.guests-container {
+  display: flex;
+  align-items: center; }
+  .guests-container span {
+    font-size: 30px; }
+  .guests-container .more, .guests-container .less {
+    color: #e35824;
+    margin: 0 10px; }
 
 /*# sourceMappingURL=style.css.map */
