@@ -99,8 +99,11 @@ a {
   cursor: pointer;
   font-family: 'Arimo', sans-serif; }
 
-p, span {
+p, span, label {
   font-family: 'Arimo', sans-serif; }
+
+.hidden {
+  display: none; }
 
 .wrapper {
   display: flex;
@@ -286,10 +289,11 @@ p, span {
 .booking .container {
   flex-direction: row;
   justify-content: space-around;
-  align-items: stretch; }
+  align-items: center;
+  margin-bottom: 130px; }
 
 #js-trigger-month {
-  width: 140px;
+  width: 160px;
   text-align: center;
   font-size: 19px;
   font-weight: 600; }
@@ -389,10 +393,17 @@ p, span {
 
 .time-container {
   display: flex;
-  flex-direction: column;
-  width: 100%; }
-  .time-container span {
-    margin-bottom: 20px; }
+  justify-content: space-between;
+  width: 100%;
+  align-items: center; }
+  .time-container input {
+    height: 33px;
+    border: none;
+    width: 214px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: "BanderaPro"; }
 
 .text-container {
   display: flex;
@@ -402,7 +413,10 @@ p, span {
   .text-container input {
     height: 33px;
     border: none;
-    max-width: 214px; }
+    width: 214px;
+    font-size: 20px;
+    padding: 0 15px;
+    text-align: center; }
 
 .guests-container {
   display: flex;

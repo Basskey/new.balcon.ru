@@ -124,8 +124,12 @@ a {
 	font-family: 'Arimo', sans-serif;
 }
 
-p, span {
+p, span, label {
 	font-family: 'Arimo', sans-serif;
+}
+
+.hidden {
+	display: none;
 }
 
 .wrapper {
@@ -356,12 +360,13 @@ p, span {
 	& .container {
 		flex-direction: row;
 		justify-content: space-around;
-		align-items: stretch;
+		align-items: center;
+		margin-bottom: 130px;
 	}
 }
 
 #js-trigger-month {
-	width: 140px;
+	width: 160px;
     text-align: center;
     font-size: 19px;
     font-weight: 600;
@@ -467,10 +472,17 @@ p, span {
 
 .time-container {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
 	width: 100%;
-	& span {
-		margin-bottom: 20px;
+	align-items: center;
+	& input {
+		height: 33px;
+		border: none;
+		width: 214px;
+		text-align: center;
+		font-size: 23px;
+		font-weight: 600;
+		font-family: "BanderaPro";
 	}
 }
 
@@ -482,7 +494,10 @@ p, span {
 	& input {
 		height: 33px;
 		border: none;
-		max-width: 214px;
+		width: 214px;
+		font-size: 20px;
+		padding: 0 15px;
+		text-align: center;
 	}
 }
 
@@ -497,4 +512,8 @@ p, span {
 		color: $brand-orange;
 		margin: 0 10px;
 	}
+}
+
+input[type="time"] {
+
 }
