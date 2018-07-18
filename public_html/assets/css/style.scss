@@ -483,6 +483,7 @@ p, span, label {
 		font-size: 23px;
 		font-weight: 600;
 		font-family: "BanderaPro";
+		padding-left: 25px;
 	}
 }
 
@@ -514,6 +515,69 @@ p, span, label {
 	}
 }
 
-input[type="time"] {
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 128px;
+	width: 100%;
+	grid-gap: 15px;
+}
 
+.offer {
+	height: 128px;
+	overflow: hidden;
+	&-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: $brand-blue;
+		height: 100%;
+		transition: 0.3s;
+		overflow: hidden;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+		& h2 {
+			color: $brand-orange;
+			font-size: 27px;
+		}
+		& span {
+			color: $brand-gray;
+		}
+	}
+	&-description {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: $brand-white;
+		height: 0;
+		transition: 0.3s;
+		overflow: hidden;
+		& h2 {
+			color: $brand-orange;
+		}
+		& span {
+			color: $brand-blue;
+		}
+	}
+	&:hover > div:first-child {
+		height: 0;
+	}
+	&:hover > div:last-child {
+		height: 100%;
+	}
+}
+
+.woman {
+	background-image: url(../img/woman.jpg);
+}
+
+.men {
+	background-image: url(../img/men.jpg);
+}
+
+.birthday {
+	background-image: url(../img/birthday.jpg);
 }

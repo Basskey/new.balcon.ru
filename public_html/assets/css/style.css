@@ -403,7 +403,8 @@ p, span, label {
     text-align: center;
     font-size: 23px;
     font-weight: 600;
-    font-family: "BanderaPro"; }
+    font-family: "BanderaPro";
+    padding-left: 25px; }
 
 .text-container {
   display: flex;
@@ -426,5 +427,59 @@ p, span, label {
   .guests-container .more, .guests-container .less {
     color: #e35824;
     margin: 0 10px; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 128px;
+  width: 100%;
+  grid-gap: 15px; }
+
+.offer {
+  height: 128px;
+  overflow: hidden; }
+  .offer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0e223f;
+    height: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .offer-title h2 {
+      color: #e35824;
+      font-size: 27px; }
+    .offer-title span {
+      color: #e8e8e8; }
+  .offer-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 0;
+    transition: 0.3s;
+    overflow: hidden; }
+    .offer-description h2 {
+      color: #e35824; }
+    .offer-description span {
+      color: #0e223f; }
+  .offer:hover > div:first-child {
+    height: 0; }
+  .offer:hover > div:last-child {
+    height: 100%; }
+
+.woman {
+  background-image: url(../img/woman.jpg); }
+
+.men {
+  background-image: url(../img/men.jpg); }
+
+.birthday {
+  background-image: url(../img/birthday.jpg); }
 
 /*# sourceMappingURL=style.css.map */
