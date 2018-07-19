@@ -641,3 +641,23 @@ p, span, label {
 	}
 }
 
+.contacts {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: stretch;
+	&::before {
+		display: none;
+	}
+	&::after {
+		display: none;
+	}
+	& .container {
+		width: calc(1170px / 2);
+		align-items: flex-start;
+	}
+	& .map {
+		width: 50%;
+		background-image: url(../img/map-plate.jpg);
+	}
+}

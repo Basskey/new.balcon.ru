@@ -522,4 +522,20 @@ p, span, label {
     .gallery_photo.half {
       width: calc(100% / 6); }
 
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: stretch; }
+  .contacts::before {
+    display: none; }
+  .contacts::after {
+    display: none; }
+  .contacts .container {
+    width: calc(1170px / 2);
+    align-items: flex-start; }
+  .contacts .map {
+    width: 50%;
+    background-image: url(../img/map-plate.jpg); }
+
 /*# sourceMappingURL=style.css.map */
