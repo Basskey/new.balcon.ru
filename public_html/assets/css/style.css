@@ -435,9 +435,17 @@ p, span, label {
   width: 100%;
   grid-gap: 15px; }
 
+.actions h1 {
+  margin-bottom: 40px; }
+.actions .container {
+  padding-bottom: 120px; }
+
 .offer {
-  height: 128px;
+  height: 140px;
   overflow: hidden; }
+  .offer > div {
+    padding: 0 20px;
+    text-align: center; }
   .offer-title {
     display: flex;
     justify-content: center;
@@ -460,7 +468,7 @@ p, span, label {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #e8e8e8;
     height: 0;
     transition: 0.3s;
     overflow: hidden; }
@@ -481,5 +489,37 @@ p, span, label {
 
 .birthday {
   background-image: url(../img/birthday.jpg); }
+
+.gallery {
+  background-image: url(../img/bg-gallery.jpg); }
+  .gallery .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 120px 15px; }
+    .gallery .container > div {
+      background-size: cover; }
+      .gallery .container > div:nth-child(1) {
+        background-image: url(../img/gallery/1.jpg); }
+      .gallery .container > div:nth-child(2) {
+        background-image: url(../img/gallery/2.jpg); }
+      .gallery .container > div:nth-child(3) {
+        background-image: url(../img/gallery/3.jpg); }
+      .gallery .container > div:nth-child(4) {
+        background-image: url(../img/gallery/4.jpg); }
+      .gallery .container > div:nth-child(5) {
+        background-image: url(../img/gallery/5.jpg); }
+      .gallery .container > div:nth-child(6) {
+        background-image: url(../img/gallery/6.jpg); }
+      .gallery .container > div:nth-child(7) {
+        background-image: url(../img/gallery/7.jpg); }
+      .gallery .container > div:nth-child(8) {
+        background-image: url(../img/gallery/8.jpg); }
+  .gallery_photo {
+    height: 260px; }
+    .gallery_photo.full {
+      width: calc(100% / 3); }
+    .gallery_photo.half {
+      width: calc(100% / 6); }
 
 /*# sourceMappingURL=style.css.map */

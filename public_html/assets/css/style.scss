@@ -523,9 +523,22 @@ p, span, label {
 	grid-gap: 15px;
 }
 
+.actions {
+	& h1 {
+		margin-bottom: 40px;
+	}
+	& .container {
+		padding-bottom: 120px;
+	}
+}
+
 .offer {
-	height: 128px;
+	height: 140px;
 	overflow: hidden;
+	& > div {
+		padding: 0 20px;
+		text-align: center;
+	}
 	&-title {
 		display: flex;
 		justify-content: center;
@@ -551,7 +564,7 @@ p, span, label {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		background-color: $brand-white;
+		background-color: $brand-gray;
 		height: 0;
 		transition: 0.3s;
 		overflow: hidden;
@@ -581,3 +594,50 @@ p, span, label {
 .birthday {
 	background-image: url(../img/birthday.jpg);
 }
+
+.gallery {
+	background-image: url(../img/bg-gallery.jpg);
+	& .container {
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: flex-start;
+		padding: 120px 15px;
+		& > div {
+			background-size: cover;
+			&:nth-child(1) {
+				background-image: url(../img/gallery/1.jpg);
+			}
+			&:nth-child(2) {
+				background-image: url(../img/gallery/2.jpg);	
+			}
+			&:nth-child(3) {
+				background-image: url(../img/gallery/3.jpg);
+			}
+			&:nth-child(4) {
+				background-image: url(../img/gallery/4.jpg);
+			}
+			&:nth-child(5) {
+				background-image: url(../img/gallery/5.jpg);
+			}
+			&:nth-child(6) {
+				background-image: url(../img/gallery/6.jpg);
+			}
+			&:nth-child(7) {
+				background-image: url(../img/gallery/7.jpg);
+			}
+			&:nth-child(8) {
+				background-image: url(../img/gallery/8.jpg);
+			}
+		}
+	}
+	&_photo {
+		height: 260px;
+		&.full {
+			width: calc(100% / 3);
+		}
+		&.half {
+			width: calc(100% / 6);
+		}
+	}
+}
+
